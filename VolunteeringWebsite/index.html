@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>	   
+           <title> HOME </title>
+
+           <meta charset="utf-8"/>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta name="description" content="A personal website portraying contribution made towards society" />
+           <meta name="keywords" content="Personal website, Social cause, Contribution, Underprivileged people, Tasks, Joy of giving, Happiness, Fund raising, Sangharsh, Koshish, Multi-page website"/>
+           <meta name="author" content="Janaki Patel">
+
+           <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+           <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+      </head>
+
+<body>
+
+      <header>
+
+       <div id="top-header">
+          <h1> Project 3: Contribution Towards Society </h1> 
+       </div>
+      
+	     <div class="nav-container">
+	       <ul class="w3-navbar w3-black">
+			  <li><a href="index.html" id="current">Home</a></li>
+			  <li><a href="about.html">About us</a></li>
+			  <li><a href="tasks.html">Tasks/Activities</a></li>
+			  <li><a href="contributors.html">Contributors</a></li>
+			  <li><a href="resources.html">Resources</a></li>
+	       </ul>
+	     </div>
+
+	 </header>
+
+	 <div class="slideshow-container">
+	  <div class="mySlides fade">
+	    <div class="numbertext">1 / 6</div>
+	    <img src="assets/images/SangharshPoster.jpg" alt="Poster" style="width:100%">
+	    <div class="text"></div>
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 6</div>
+	    <img src="assets/images/happy.jpg" alt="Happy picture" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 6</div>
+	    <img src="assets/images/biscuit.jpg" alt="biscuit pic" style="width:100%">
+	  </div>
+      
+      <div class="mySlides fade">
+	    <div class="numbertext">4 / 6</div>
+	    <img src="assets/images/blind.jpg" alt="blind pic" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">5 / 6</div>
+	    <img src="assets/images/cloth.jpg" alt="cloth donation" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">6 / 6</div>
+	    <img src="assets/images/donation.jpg" alt="cloth donation" style="width:100%">
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  <span class="dot" onclick="currentSlide(5)"></span>
+	  <span class="dot" onclick="currentSlide(6)"></span>
+	</div>
+     
+    
+
+    <div class="flex-container1">
+       	<div id="content-header">
+	     Koshish-"An initiative by youth to make India a better place to live." 
+		</div>
+        <div class="flex-item1">
+    	<p>The utmost brutality and inhumanity of the numerous rape cases in India has shaken us all to our very core. We blame the police, the government, and the shameless by-passers who ignored such heinous acts and didn't even lift a finger to help those innocent souls. Some of us even blame the victims, criticizing their dressing or their timing or even their attitude! We claim that we know better, we claim to be on the victim’s side, we claim to fight for justice. </p>
+        </div>
+	
+
+    <div class="flex-item1">   
+    	<p>But the question is: </p>
+    	<p>What have we done for them? </p>
+    	<p>Offered our supreme criticism? Pointed out the things that went wrong?</p>
+		<p>Organized or attended a candle march?</p>
+	    <p>Do you think this is all we could do? </p>
+    </div>
+     
+    <div class="flex-item1"> 
+    	<p>We do street plays on corruption, Use abusive language for politicians. </p>
+    	<p>But we must ask ourselves, what have we done for our nation? </p>
+    	<p>We criticize our municipality for unkempt and filthy lanes, dirty water and foul smell. What have we done to keep our roads clean? </p>
+		<p>Why have we, the youth, forgotten that
+		We are the wealth of nation.
+		We are the real heroes.
+		We can be the change we wish to see in this world.
+		We have the power to make the impossible possible.</p>
+    </div>
+    
+</div>
+ 
+
+    <div class="flex-container2">
+       <div class="flex-item2">
+        <p>The power to bring the change or atleast try to bring the same is in our hands! </p>  
+        <p> And so here is a social initiative, a social endeavor called "KOSHISH" by ISTE-ITNU as a part of I-FEST’14 in which we wish to make a difference to the society by making the individuals realize that up to what extent can our KOSHISH bring a change in the nation. </p>
+    </div>
+	</div>
+
+     <script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	  </script>
+
+  
+   
+<div id="footer">
+     Copyright &copy; 2016 Janaki Patel
+   </div>
+
+</body>
+</html>
